@@ -1,4 +1,6 @@
-
+body{
+	background-color: #cccccc;
+}
 .navbar > div{
 	background: #afa;
 	padding: 1em;
@@ -10,7 +12,7 @@
 
 .navbar{
 	display:grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	grid-gap: 1em;
 	grid-auto-columns: minmax(100px, auto);
 }
