@@ -1,9 +1,17 @@
 body{
 	background-color: #cccccc;
 }
+
+.navbar {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 20px;
+	text-align:center
+
+}
+
 .navbar > div{
 	background: #afa;
-	padding: 1em;
+	padding: 10px;
 }
 
 .navbar > div:nth-child(odd){
@@ -36,4 +44,7 @@ body{
 	border:#333 1px solid;
 	
 	padding: 1em;
+}
+p{
+	text-align:center
 }
