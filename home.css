@@ -1,38 +1,79 @@
+.page {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-columns: minmax(50% , auto);
+  grid-gap: 1em;
+}
 .pic_container {
   position: relative;
-  width: 50%;
+  width: 98%;
 }
 
 .image {
+  
   display: block;
-  width: 100%;
+  width: 98%;
   height: auto;
+  border-radius: 8px;
 }
 
-.overlay {
+.left_overlay {
+  border-radius: 8px;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #008CBA;
+  background-color: #47009C;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+.right_overlay {
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 98%;
+  right: 0;
+  background-color: #47009C;
   overflow: hidden;
   width: 0;
   height: 100%;
   transition: .5s ease;
 }
 
-.container:hover .overlay {
-  width: 100%;
+.pic_container:hover .left_overlay {
+  width: 98%;
+  opacity: 0.5;
+
+}
+.pic_container:hover .right_overlay {
+  width: 98%;
+  left: 0;
+  opacity: 0.5;
+
 }
 
-.text {
+.text-cont {
   white-space: nowrap; 
   color: white;
   font-size: 20px;
   position: absolute;
   overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  top: 49%;
+  left: 49%;
+  transform: translate(-49%, -49%);
+  -ms-transform: translate(-49%, -49%);
+}
+.al{
+  float:right;
+  margin-right: 10%;
+}
+
+.text{
+  color:white;
+  padding-top: 40%;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
 }

@@ -1,3 +1,36 @@
 body{
-	background-color: #333333;
+	background-color: #000000;
+}
+
+div{
+	 text-align: center;
+}
+.text{
+  color:white;
+  
+  text-align: center;
+  font-size: 26px;
+}
+
+.page {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-columns: minmax(50% , auto);
+  grid-gap: 4em;
+  
+}
+.frame-left{
+	display: inline-block;
+	border: 16px groove #47009C;
+	height: 300px;
+	align-self: center;
+	border-radius: 40px 0px 40px 0px;
+}
+
+.frame-right{
+	display: inline-block;
+	border: 16px ridge #47009C;
+	height: 300px;
+	align-self: center;
+	border-radius: 40px 0px 40px 0px;
 }
