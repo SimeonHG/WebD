@@ -1,0 +1,32 @@
+.text{
+  color:white;
+ 
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+.blog{
+	text-align: center;
+}
+
+.post_img{
+	border-radius: 10px;
+	fill: all;
+	width: 100%;
+}
+
+
+.blogpost{
+	
+	border: 3px solid #47009C;
+  border-radius: 13px;
+ 
+  width: 30%;
+background-color:#fff;
+
+  margin: auto;
+}
+.blogpost div{
+
+}
